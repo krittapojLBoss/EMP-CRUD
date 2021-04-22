@@ -39,7 +39,7 @@ router.post('/api/employee/add', (req, res) => {
     emp.save((err, data) => {
         if(!err) {
             // res.send(data);
-            res.status(200).json({code: 200, message: `คุณ ${data.Firstname} นามสกุล ${data.Lastname} ได้ถูกเพิ่มเรียบร้อยเเล้ว`, addEmployee: data})
+            res.status(200).json({code: 200, message: ` ${data.Firstname} นามสกุล ${data.Lastname} ได้ถูกเพิ่มเรียบร้อยเเล้ว`, addEmployee: data})
         } else {
            console.log(err);
         }
