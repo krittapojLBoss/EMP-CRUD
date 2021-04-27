@@ -32,7 +32,7 @@ router.post('/api/employee/add', (req, res) => {
     const emp = new Employee({
         Firstname: req.body.Firstname,
         Lastname: req.body.Lastname,
-        Number: req.body.Number,
+        Tell: req.body.Tell,
         Email:req.body.Email,
         Job:req.body.Job
     });
@@ -54,7 +54,7 @@ router.put('/api/employee/update/:id', (req, res) => {
     const emp = {
         Firstname: req.body.Firstname,
         Lastname: req.body.Lastname,
-        Number: req.body.Number,
+        Tell: req.body.Tell,
         Email:req.body.Email,
         Job:req.body.Job
     };

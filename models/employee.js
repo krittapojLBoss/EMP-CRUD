@@ -9,7 +9,7 @@ const Employee = mongoose.model('Employee',{
         type: String,
         required: true
     },
-    Number:{
+    Tell:{
         type: String,
         required: true
     },
